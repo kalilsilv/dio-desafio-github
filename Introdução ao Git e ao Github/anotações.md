@@ -18,4 +18,6 @@ https://git-scm.com/download/linux
 
 - Basicamente, blob é um objeto, aponta para um diretório ou arquivo. Tree é literalmente uma árvore, aponta para blobs ou outras árvores. E os comits apontam pra TUDO.
 
-- 
+- Para configurar o git a primeira vez com o usuario
+    git config --global user.email "litho.contato@gmail.com"
+    git config --global user.name socioputa

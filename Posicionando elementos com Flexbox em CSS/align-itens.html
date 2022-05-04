@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundamentos - Align Items</title>
+
+    <style>
+        .flex-container{
+            display: flex;
+            border: 2px solid black;
+            max-width: 350px;
+        }
+        .flex-item{
+            background-color: blueviolet;
+            margin: 5px;
+            color: white;
+            text-align: center;
+            flex: 1;
+        }
+        .column{
+            flex-direction: column;
+        }
+        .center{
+            align-items: center;
+        }
+        .stretch{
+            align-items: stretch;
+        }
+        .flex-start{
+            align-items: flex-start;
+        }
+        .flex-end{
+            align-items: flex-end;
+        }
+        .baseline{
+            align-items: baseline;
+        }
+        .central{
+            height: 300px;
+            justify-content: center;
+        }
+        .central .flex-item{
+            flex: 0;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Row</h1>
+    <h3>Center</h3>
+    <section class="flex-container center">
+        <div class="flex-item">Lorem ipsum dolor sit amet</div>
+        <div class="flex-item">Lorem ipsum dolor sit amet consectetur adipiscing elit</div>
+        <div class="flex-item">Cras volutpat eu est ut placerat.</div>
+    </section>
+
+    <h3>Stretch</h3>
+    <section class="flex-container stretch">
+        <div class="flex-item">Lorem ipsum dolor sit amet</div>
+        <div class="flex-item">Lorem ipsum dolor sit amet consectetur adipiscing elit</div>
+        <div class="flex-item">Cras volutpat eu est ut placerat.</div>
+    </section>
+
+    <h3>Flex-start</h3>
+    <section class="flex-container flex-start">
+        <div class="flex-item">Lorem ipsum dolor sit amet</div>
+        <div class="flex-item">Lorem ipsum dolor sit amet consectetur adipiscing elit</div>
+        <div class="flex-item">Cras volutpat eu est ut placerat.</div>
+    </section>
+    
+    <h3>Flex-end</h3>
+    <section class="flex-container flex-end">
+        <div class="flex-item">Lorem ipsum dolor sit amet</div>
+        <div class="flex-item">Lorem ipsum dolor sit amet consectetur adipiscing elit</div>
+        <div class="flex-item">Cras volutpat eu est ut placerat.</div>
+    </section>
+
+    <h3>Baseline</h3>
+    <section class="flex-container baseline">
+        <div class="flex-item"><br>Lorem ipsum dolor sit amet</div>
+        <div class="flex-item">Lorem ipsum dolor sit amet consectetur adipiscing elit</div>
+        <div class="flex-item">Cras volutpat eu est ut placerat.</div>
+    </section>
+
+    <h1>Column</h1>
+    <h3>Center</h3>
+    <section class="flex-container center column">
+        <div class="flex-item">Lorem ipsum dolor sit amet</div>
+        <div class="flex-item">Lorem ipsum dolor sit amet consectetur adipiscing elit</div>
+        <div class="flex-item">Cras volutpat eu est ut placerat.</div>
+    </section>
+
+    <h3>Stretch</h3>
+    <section class="flex-container stretch column">
+        <div class="flex-item">Lorem ipsum dolor sit amet</div>
+        <div class="flex-item">Lorem ipsum dolor sit amet consectetur adipiscing elit</div>
+        <div class="flex-item">Cras volutpat eu est ut placerat.</div>
+    </section>
+
+    <h3>Flex-start</h3>
+    <section class="flex-container flex-start column">
+        <div class="flex-item">Lorem ipsum dolor sit amet</div>
+        <div class="flex-item">Lorem ipsum dolor sit amet consectetur adipiscing elit</div>
+        <div class="flex-item">Cras volutpat eu est ut placerat.</div>
+    </section>
+    
+    <h3>Flex-end</h3>
+    <section class="flex-container flex-end column">
+        <div class="flex-item">Lorem ipsum dolor sit amet</div>
+        <div class="flex-item">Lorem ipsum dolor sit amet consectetur adipiscing elit</div>
+        <div class="flex-item">Cras volutpat eu est ut placerat.</div>
+    </section>
+
+    <h3>Baseline</h3>
+    <section class="flex-container baseline column">
+        <div class="flex-item"><br>Lorem ipsum dolor sit amet</div>
+        <div class="flex-item">Lorem ipsum dolor sit amet consectetur adipiscing elit</div>
+        <div class="flex-item">Cras volutpat eu est ut placerat.</div>
+    </section>
+
+    <h3>Alinhamento central</h3>
+    <section class="flex-container central center">
+        <div class="flex-item">Lorem ipsum dolor 
+            sit amet consectetur adipiscing elit.
+            Cras volutpat eu est ut placerat.
+        </div>
+    </section>
+</body>
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundamentos - Align Item</title>
+
+    <style>
+        .flex-container{
+            display: flex;
+            margin-bottom: 5px;
+            border: 2px solid black;
+            max-width: 350px;
+        }
+        .flex-item{
+            background-color: blueviolet;
+            font-size: 24px;
+            margin: 5px;
+            color: white;
+            text-align: center;
+        }
+        .center{
+            align-self: center;
+        }
+        .start{
+            align-self: flex-start;
+        }
+        .end{
+            align-self: flex-end;
+        }
+        .baseline{
+            align-self: baseline;
+        }
+        .stretch{
+            align-self: stretch;
+        }
+        .auto{
+            align-self: auto;
+        }
+    </style>
+</head>
+<body>
+    <section class="flex-container">
+        <div class="flex-item auto">A</div>
+        <div class="flex-item auto">Lorem ipsum dolor sit amet,
+             consectetur adipiscing elit.</div>
+        <div class="flex-item auto">Lorem ipsum dolor sit amet</div>
+        <div class="flex-item auto">Lorem ipsum dolor </div>
+    </section>
+
+    <section class="flex-container">
+        <div class="flex-item stretch">A</div>
+        <div class="flex-item stretch">Lorem ipsum dolor sit amet,
+             consectetur adipiscing elit.</div>
+        <div class="flex-item stretch">Lorem ipsum dolor sit amet</div>
+        <div class="flex-item stretch">Lorem ipsum dolor </div>
+    </section>
+
+    <section class="flex-container">
+        <div class="flex-item center">A</div>
+        <div class="flex-item center">Lorem ipsum dolor sit amet,
+             consectetur adipiscing elit.</div>
+        <div class="flex-item center">Lorem ipsum dolor sit amet</div>
+        <div class="flex-item center">Lorem ipsum dolor </div>
+    </section>
+
+    <section class="flex-container">
+        <div class="flex-item start">A</div>
+        <div class="flex-item baseline">Lorem ipsum </div>
+        <div class="flex-item baseline">Lorem ipsum jjjjjjj
+            jjjjjjjjjjjjjjjjjjj
+             dolor sit amet</div>
+        <div class="flex-item end">Lorem</div>
+    </section>
+</body>
+</html>

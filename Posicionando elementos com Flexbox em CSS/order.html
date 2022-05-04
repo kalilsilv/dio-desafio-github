@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundamentos - Order</title>
+
+    <style>
+        .flex-container{
+            display: flex;
+            border: 2px solid black;
+            max-width: 350px;
+            margin-bottom: 20px;
+        }
+        .flex-item{
+            flex: 1;
+            background-color: blueviolet;
+            color: white;
+            text-align: center;
+            font-size: 24px;
+            margin: 5px;
+        }
+        .order-1{
+            order: 1;
+        }
+        .order-2{
+            order: 2;
+        }
+        .order-3{
+            order: 3;
+        }
+        .direction{
+            flex-direction: column;
+        }
+    </style>
+</head>
+<body>
+    <h3>order: 0</h3>
+    <div class="flex-container">
+        <div class="flex-item">1</div>
+        <div class="flex-item">2</div>
+        <div class="flex-item">3</div>
+        <div class="flex-item">4</div>
+    </div>
+
+    <h3>orders diferentes</h3>
+    <div class="flex-container">
+        <div class="flex-item order-2">1</div>
+        <div class="flex-item">2</div>
+        <div class="flex-item order-3">3</div>
+        <div class="flex-item order-1">4</div>
+    </div>
+
+    <h3>ilustrativo de coluna</h3>
+    <div class="flex-container direction">
+        <div class="flex-item order-2">1</div>
+        <div class="flex-item">2</div>
+        <div class="flex-item order-3">3</div>
+        <div class="flex-item order-1">4</div>
+    </div>
+</body>
+</html>

@@ -19,3 +19,6 @@ git commit -m - comita os arquivos adicionados e coloca uma mensagem curta para 
 git remote add origin (colar link http do repositorio do github) - adiciona o repositório do github
 
 git push origin master - joga a branch no repositório
+
+gitignore - faz com que arquivos ou diretórios sejam ignorados ao salvar
+gitkeep - faz com que diretórios vazios sejam incluídos na hora de salvar
